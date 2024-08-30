@@ -1,0 +1,73 @@
+@startuml "ejercicio 30"
+
+class Institute{
+    - String typpe;
+    - String educationalLevel;
+}
+
+
+class BusinessGroup {
+    - double fundsInvested;
+    - Strinng participationInProyects;
+}
+
+class ResearchProject {
+    - String name;
+    - String description;
+
+
+}
+
+class ReserchProduct {
+    - String name;
+    - String type;
+    - String description;
+    - String status;
+    - Int assignedPoints;
+
+}
+
+class Researcher {
+    - String name;
+    - String roleInProyect;
+    - String roleInActivity;
+    
+}
+
+class Task {
+    - String description;
+    - Date duration;
+}
+
+class Resource {
+    - String type;
+    - String description;
+    - Strinng availability;
+
+}
+
+class Category {
+    - String description;
+    - String categoryType;
+    - String categoryunindexed;
+}
+
+class Document {
+    - String report;
+    - Date date;
+}
+
+class Activity {
+    - String name;
+    - String type;
+}
+
+
+
+
+
+
+
+
+
+@enduml
