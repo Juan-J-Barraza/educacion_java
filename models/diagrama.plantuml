@@ -3,19 +3,23 @@
 class Institute{
     - String typpe;
     - String educationalLevel;
+    - List<Researcher> listResearchers;
+    - BusinessGroup businessGroup;
 }
 
 
 class BusinessGroup {
     - double fundsInvested;
-    - Strinng participationInProyects;
+    - List<Institute> listInstitutes;
+    - List<ResearchProject> listResearchProject;
 }
 
 class ResearchProject {
     - String name;
     - String description;
-
-
+    - Date publicationDateColciencias;
+    - List<ReserchProduct> listReserchProduct;
+    - BusinessGroup businessGroup;
 }
 
 class ReserchProduct {
@@ -24,6 +28,11 @@ class ReserchProduct {
     - String description;
     - String status;
     - Int assignedPoints;
+    - List<Task> listTasks;
+    - Document docuent;
+    - Publication publication;
+    - ResearchProject reserchProject;
+    - List<Researcher> listResearch;
 
 }
 
@@ -31,18 +40,22 @@ class Researcher {
     - String name;
     - String roleInProyect;
     - String roleInActivity;
-    
+    - ReserchProduct reserchProduct;
+    - Institute institute;
+
 }
 
 class Task {
     - String description;
     - Date duration;
+    - List<Resource> listResources;
 }
 
 class Resource {
     - String type;
     - String description;
     - Strinng availability;
+    - Task task;
 
 }
 
@@ -57,16 +70,26 @@ class Document {
     - Date date;
 }
 
-class Activity {
-    - String name;
-    - String type;
+class Publication {
+    - String title;
+    - String description;
+    - String statusPublication;
+    - Date publicationDate;
 }
 
 
 
 
-
-
+Task "1" -- "*" Resource
+ReserchProduct "1" -- "*" Task
+ReserchProduct "1" -- "1" Document
+ReserchProduct "*" -- "1" Category
+ReserchProduct "1" -- "1" Publication
+ReserchProduct "*" -- "1" ResearchProject
+ReserchProduct "1" -- "*" Researcher
+Researcher "*" -- "1" Institute
+BusinessGroup "1" -- "*" Institute
+BusinessGroup "1" -- "*" ResearchProject
 
 
 
