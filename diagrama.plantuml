@@ -54,7 +54,7 @@ class Task {
 class Resource {
     - String type;
     - String description;
-    - Strinng availability;
+    - String availability;
     - Task task;
 
 }
