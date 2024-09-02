@@ -8,8 +8,8 @@ public class ResearchProject {
     private String name;
     private String description;
     private Date publicationDateColciencias;
-    private List<ReserchProduct> listReserchProduct;
     private BusinessGroup businessGroup;
+    private List<ReserchProduct> listReserchProduct;
 
     public ResearchProject() {
     }
@@ -73,7 +73,6 @@ public class ResearchProject {
         this.businessGroup = businessGroup;
     }
 
-    
     
 
     

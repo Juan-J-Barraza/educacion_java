@@ -30,7 +30,6 @@ class ReserchProduct {
     - Int assignedPoints;
     - List<Task> listTasks;
     - Document docuent;
-    - Publication publication;
     - ResearchProject reserchProject;
     - List<Researcher> listResearch;
 
@@ -40,7 +39,6 @@ class Researcher {
     - String name;
     - String roleInProyect;
     - String roleInActivity;
-    - ReserchProduct reserchProduct;
     - Institute institute;
 
 }
@@ -75,6 +73,7 @@ class Publication {
     - String description;
     - String statusPublication;
     - Date publicationDate;
+    - ReserchProduct ReserchProduct;
 }
 
 

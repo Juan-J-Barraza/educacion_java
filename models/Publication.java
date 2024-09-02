@@ -7,15 +7,18 @@ public class Publication {
     private String description;
     private String statusPublication;
     private Date publicationDate;
+    private ReserchProduct reserchProduct;
     
     public Publication() {
     }
 
-    public Publication(String title, String description, String statusPublication, Date publicationDate) {
+    public Publication(String title, String description, String statusPublication, Date publicationDate, 
+    ReserchProduct reserchProduct) {
         this.title = title;
         this.description = description;
         this.statusPublication = statusPublication;
         this.publicationDate = publicationDate;
+        this.reserchProduct = reserchProduct;
     }
 
     
@@ -28,6 +31,7 @@ public class Publication {
                '}';
     }
 
+    
     public String getTitle() {
         return title;
     }
@@ -58,6 +62,14 @@ public class Publication {
 
     public void setPublicationDate(Date publicationDate) {
         this.publicationDate = publicationDate;
+    }
+
+    public ReserchProduct getReserchProduct() {
+        return reserchProduct;
+    }
+
+    public void setReserchProduct(ReserchProduct reserchProduct) {
+        this.reserchProduct = reserchProduct;
     }
 
     

@@ -11,7 +11,6 @@ public class ReserchProduct {
     private int assignedPoints;
     private List<Task> listTasks;
     private Document document;
-    private Publication publication;
     private ResearchProject reserchProject;
     private List<Researcher> listResearch;
 
@@ -19,14 +18,13 @@ public class ReserchProduct {
     }
 
     public ReserchProduct(String name, String type, String description, String status, int assignedPoints,
-            Document document, Publication publication, ResearchProject reserchProject) {
+            Document document, ResearchProject reserchProject) {
         this.name = name;
         this.type = type;
         this.description = description;
         this.status = status;
         this.assignedPoints = assignedPoints;
         this.document = document;
-        this.publication = publication;
         this.reserchProject = reserchProject;
         this.listTasks = new ArrayList<>();
         this.listResearch = new ArrayList<>();
@@ -100,14 +98,6 @@ public class ReserchProduct {
         this.document = document;
     }
 
-    public Publication getPublication() {
-        return publication;
-    }
-
-    public void setPublication(Publication publication) {
-        this.publication = publication;
-    }
-
     public ResearchProject getReserchProject() {
         return reserchProject;
     }
@@ -124,9 +114,5 @@ public class ReserchProduct {
         this.listResearch = listResearch;
     }
 
-    
 
-    
-
-    
 }

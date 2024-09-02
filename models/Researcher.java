@@ -4,18 +4,16 @@ public class Researcher {
     private String name;
     private String roleInProyect;
     private String roleInActivity;
-    private ReserchProduct reserchProduct;
     private Institute institute;
 
     public Researcher() {
     }
 
-    public Researcher(String name, String roleInProyect, String roleInActivity, ReserchProduct reserchProduct,
+    public Researcher(String name, String roleInProyect, String roleInActivity,
             Institute institute) {
         this.name = name;
         this.roleInProyect = roleInProyect;
         this.roleInActivity = roleInActivity;
-        this.reserchProduct = reserchProduct;
         this.institute = institute;
     }
 
@@ -51,14 +49,6 @@ public class Researcher {
 
     public void setRoleInActivity(String roleInActivity) {
         this.roleInActivity = roleInActivity;
-    }
-
-    public ReserchProduct getReserchProduct() {
-        return reserchProduct;
-    }
-
-    public void setReserchProduct(ReserchProduct reserchProduct) {
-        this.reserchProduct = reserchProduct;
     }
 
     public Institute getInstitute() {
