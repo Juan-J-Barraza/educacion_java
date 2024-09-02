@@ -4,16 +4,14 @@ public class Resource {
     private String type;
     private String description;
     private String availability;
-    private Task task;
 
     public Resource() {
     }
 
-    public Resource(String type, String description, String availability, Task task) {
+    public Resource(String type, String description, String availability) {
         this.type = type;
         this.description = description;
         this.availability = availability;
-        this.task = task;
     }
 
     @Override 
@@ -48,16 +46,6 @@ public class Resource {
     public void setAvailability(String availability) {
         this.availability = availability;
     }
-
-    public Task getTask() {
-        return task;
-    }
-
-    public void setTask(Task task) {
-        this.task = task;
-    }
-    
-    
 
     
 }

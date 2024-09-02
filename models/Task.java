@@ -1,5 +1,6 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -14,6 +15,7 @@ public class Task {
     public Task(String description, Date duration) {
         this.description = description;
         this.duration = duration;
+        this.listResources = new  ArrayList<>();
     }
 
     @Override 
